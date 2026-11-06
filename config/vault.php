@@ -7,19 +7,20 @@ return [
     | Minutes to cache
     |--------------------------------------------------------------------------
     |
-    | The selection of minutes text can be cached for
+    | The selection of minutes text can be cached for. Each label is a
+| translation key plus its replacements, translated in the view.
     |
     */
 
     'minutes' => [
-        '30'     => trans('vault.form.minutes', ['minutes' => 30]),
-        '60'     => trans('vault.form.hour', ['hour' => 1]),
-        '720'    => trans('vault.form.hours', ['hours' => 12]),
-        '1440'   => trans('vault.form.hours', ['hours' => 24]),
-        '2880'   => trans('vault.form.hours', ['hours' => 48]),
-        '10080'  => trans('vault.form.days', ['days' => 7]),
-        '20160'  => trans('vault.form.days', ['days' => 14]),
-        '43200'  => trans('vault.form.days', ['days' => 30]),
+        '30'     => ['vault.form.minutes', ['minutes' => 30]],
+        '60'     => ['vault.form.hour', ['hour' => 1]],
+        '720'    => ['vault.form.hours', ['hours' => 12]],
+        '1440'   => ['vault.form.hours', ['hours' => 24]],
+        '2880'   => ['vault.form.hours', ['hours' => 48]],
+        '10080'  => ['vault.form.days', ['days' => 7]],
+        '20160'  => ['vault.form.days', ['days' => 14]],
+        '43200'  => ['vault.form.days', ['days' => 30]],
     ],
 
     /*

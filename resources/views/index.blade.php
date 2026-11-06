@@ -15,8 +15,8 @@
             <div class="field">
                 <label>{{ trans('vault.form.expire_label') }}</label>
                 <select name="expire" id="expire" class="ui dropdown" required>
-                    @foreach (config('vault.minutes') as $key => $val)
-                        <option value="{{ $key }}">{{ $val }}</option>
+                    @foreach (config('vault.minutes') as $key => [$label, $replace])
+                        <option value="{{ $key }}">{{ __($label, $replace) }}</option>
                     @endforeach 
                 </select>
             </div>

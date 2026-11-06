@@ -15,7 +15,7 @@ return [
     'copy'      => [
             'heading'       => 'Vault',
             'sub_heading'   => 'Share sensitive information securely',
-            'footer'		=> 'Built with <a href="http://lumen.laravel.com/">Lumen</a> and <a href="http://semantic-ui.com/">Semantic UI</a>.',
+            'footer'		=> 'Built with <a href="https://laravel.com/">Laravel</a> and <a href="http://semantic-ui.com/">Semantic UI</a>.',
     ],
 
     'sidebar'   =>  [
